@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Yaroslav Sveshnikov](https://up.htmlacademy.ru/htmlcss/22/user/630421).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Петров] (https://htmlacademy.ru/profile/fyvfyv).
 
 ---
 
