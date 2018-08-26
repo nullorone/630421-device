@@ -19,7 +19,7 @@
           <div class="user-block__search">
             <form action="#" method="GET" class="form-search">
               <label for="search">
-                <input type="search" placeholder="Поиск по сайту">
+                <input type="text" id="search" placeholder="Поиск по сайту">
               </label>
               <a href="#" class="form-search__link visual-hidden">Найти</a>
             </form>
@@ -30,8 +30,8 @@
               <a href="#" class="user-block__link visual-hidden">Выйти</a>
             </div>
             <div class="user-block__shop">
-              <a href="#" class="link">Сравнить</a>
-              <a href="#" class="link">Корзина</a>
+              <a href="#" class="user-block__link">Сравнить</a>
+              <a href="#" class="user-block__link">Корзина</a>
             </div>
           </div>
         </section>
@@ -54,7 +54,7 @@
                 <li class="category__item">
                   <a href="#" class="category__link">Фитнесс-браслеты</a>
                 </li>
-                <li class="category-item">
+                <li class="category__item">
                   <a href="#" class="category__link">Умные часы</a>
                 </li>
               </ul>
@@ -82,13 +82,13 @@
     </header>
     <!-- Основной слайдер -->
     <div class="slider-promo">
-      <input type="radio" id="promo__slide1">
-      <input type="radio" id="promo__slide2">
-      <input type="radio" id="promo__slide3">
+      <input type="radio" id="slider-promo__slide1">
+      <input type="radio" id="slider-promo__slide2">
+      <input type="radio" id="slider-promo__slide3">
       <div class="controls-promo">
-        <label for="promo__slide1"></label>
-        <label for="promo__slide2"></label>
-        <label for="promo__slide3"></label>
+        <label for="controls-promo__slide1"></label>
+        <label for="controls-promo__slide2"></label>
+        <label for="controls-promo__slide3"></label>
       </div>
       <div class="promo-slide1">
         <img src="#" alt="Изображение промо монопод" class="slide-pic">
@@ -99,7 +99,7 @@
           <p class="description">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a href="#" class="slide-link">Подробнее</a>
+          <a href="#" class="link">Подробнее</a>
           <table class="characteristics">
             <tr class="characteristics__row">
               <td class="characteristics__item">8,5 м</td>
@@ -123,7 +123,7 @@
           <p class="description">
             Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
-          <a href="#" class="slide-link">Подробнее</a>
+          <a href="#" class="link">Подробнее</a>
           <table class="characteristics">
             <tr class="characteristics__row">
               <td class="characteristics__item">48 часов</td>
@@ -143,9 +143,9 @@
           <p class="description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="slide-link">Подробнее</a>
+          <a href="#" class="link">Подробнее</a>
           <table class="characteristics">
-            <tr class="characteristics-row">
+            <tr class="characteristics__row">
               <td class="characteristics__item">800 м</td>
               <td class="characteristics__item">50 м</td>
             </tr>
@@ -200,15 +200,15 @@
       </section>
       <!-- Слайдер сервисов магазина -->
       <div class="slider-services">
-        <input type="radio" id="services__slide1">
-        <input type="radio" id="services__slide2">
-        <input type="radio" id="services__slide3">
+        <input type="radio" id="slider-services__slide1">
+        <input type="radio" id="slider-services__slide2">
+        <input type="radio" id="slider-services__slide3">
         <div class="controls-services">
-          <label for="services__slide1">Доставка</label>
-          <label for="services__slide2">Гарантия</label>
-          <label for="services__slide3">Кредит</label>
+          <label for="controls-services__slide1">Доставка</label>
+          <label for="controls-services__slide2">Гарантия</label>
+          <label for="controls-services__slide3">Кредит</label>
         </div>
-        <div class="services-slide services--slide1">
+        <div class="services-slide services--icon1">
           <!-- services--slide1  модификатор для иконок в слайдах -->
           <h3 class="title">
             Доставка
@@ -218,7 +218,7 @@
             его на ваш этаж.
           </p>
         </div>
-        <div class="services-slide services--slide2">
+        <div class="services-slide services--icon2">
           <h3 class="title">
             Гарантия
           </h3>
@@ -226,7 +226,7 @@
             Если из-за возгарания купленного у нас у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
           </p>
         </div>
-        <div class="services__slide services__slide3">
+        <div class="services__slide services__icon3">
           <h3 class="title">
             Кредит
           </h3>
