@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <title>HTML Academy: Девайс</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> -->
 </head>
-
 <body>
   <div class="wrapper">
     <!-- Шапка сайта -->
@@ -63,8 +66,7 @@
                   <a href="#" class="category__link">Квадрокоптеры</a>
                 </li>
               </ul>
-          </ul>
-          </li>
+            </li>
           </ul>
           <ul class="services">
             <li class="services__item">
@@ -81,10 +83,10 @@
       </div>
     </header>
     <!-- Основной слайдер -->
-    <div class="slider-promo">
-      <input type="radio" id="slider-promo__slide1">
-      <input type="radio" id="slider-promo__slide2">
-      <input type="radio" id="slider-promo__slide3">
+    <div class="promo-slider">
+      <input type="radio" id="promo-slider__slide1">
+      <input type="radio" id="promo-slider__slide2">
+      <input type="radio" id="promo-slider__slide3">
       <div class="controls-promo">
         <label for="controls-promo__slide1"></label>
         <label for="controls-promo__slide2"></label>
@@ -159,135 +161,149 @@
     </div>
     <main class="main">
       <div class="container">
-      <!-- Секция с разделами товаров -->
-      <section class="category-goods">
-        <ul class="category-goods__list">
-          <li class="category-goods__item">
-            <a href="#" class="category-goods__link">
-              <img src="#" alt="Категория виртуальная реальность" class="category-goods__pic"></a>
-              <span class="subtitle"><a href="#">Виртуальная реальность</a></span>
-          </li>
-          <li class="category-goods__item">
-            <a href="catalog.html" class="category-goods__link">
-              <img src="#" alt="Категория моноподы для селфи" class="category-goods__pic"></a>
-              <span class="subtitle"><a href="catalog.html">Моноподы для селфи</a></span>
-          </li>
-          <li class="category-goods__item">
-            <a href="#" class="category-goods__link">
-              <img src="#" alt="Категория экшн-камеры" class="category-goods__pic">
-              <span class="subtitle"><a href="#">Экшн-камеры</a></span>
-            
-          </li>
-          <li class="category-goods__item">
-            <a href="#" class="category-goods__link">
-              <img src="#" alt="Категория фитнесс-браслеты" class="category-goods__pic"></a>
-              <span class="subtitle"><a href="#">Фитнесс браслеты</a></span>
-            </a>
-          </li>
-          <li class="category-goods__item">
-            <a href="#" class="category-goods__link">
-              <img src="#" alt="Категория умные часы" class="category-goods__pic"></a>
-              <span class="subtitle"><a href="#">Умные часы</a></span>
-            </a>
-          </li>
-          <li class="category-goods__item">
-            <a href="#" class="category-goods__link">
-              <img src="#" alt="Категория квадрокоптеры" class="category-goods__pic"></a>
-              <span class="subtitle"><a href="#">Квадрокоптеры</a></span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- Слайдер сервисов магазина -->
-      <div class="slider-services">
-        <input type="radio" id="slider-services__slide1">
-        <input type="radio" id="slider-services__slide2">
-        <input type="radio" id="slider-services__slide3">
-        <div class="controls-services">
-          <label for="controls-services__slide1">Доставка</label>
-          <label for="controls-services__slide2">Гарантия</label>
-          <label for="controls-services__slide3">Кредит</label>
+        <!-- Секция с разделами товаров -->
+        <section class="goods-category">
+          <ul class="goods-category__list">
+            <li class="goods-category__item">
+              <a href="#" class="goods-category__link">
+                <img src="#" alt="Категория виртуальная реальность" class="goods-category__pic">
+              </a>
+              <span class="subtitle">
+                <a href="#">Виртуальная реальность</a>
+              </span>
+            </li>
+            <li class="goods-category__item">
+              <a href="catalog.html" class="goods-category__link">
+                <img src="#" alt="Категория моноподы для селфи" class="goods-category__pic">
+              </a>
+              <span class="subtitle">
+                <a href="catalog.html">Моноподы для селфи</a>
+              </span>
+            </li>
+            <li class="goods-category__item">
+              <a href="#" class="goods-category__link">
+                <img src="#" alt="Категория экшн-камеры" class="goods-category__pic">
+              </a>
+              <span class="subtitle">
+                <a href="#">Экшн-камеры</a>
+              </span>
+            </li>
+            <li class="goods-category__item">
+              <a href="#" class="goods-category__link">
+                <img src="#" alt="Категория фитнесс-браслеты" class="goods-category__pic">
+              </a>
+              <span class="subtitle">
+                <a href="#">Фитнесс браслеты</a>
+              </span>
+            </li>
+            <li class="goods-category__item">
+              <a href="#" class="goods-category__link">
+                <img src="#" alt="Категория умные часы" class="goods-category__pic">
+              </a>
+              <span class="subtitle">
+                <a href="#">Умные часы</a>
+              </span>
+            </li>
+            <li class="goods-category__item">
+              <a href="#" class="goods-category__link">
+                <img src="#" alt="Категория квадрокоптеры" class="goods-category__pic">
+              </a>
+              <span class="subtitle">
+                <a href="#">Квадрокоптеры</a>
+              </span>
+            </li>
+          </ul>
+        </section>
+        <!-- Слайдер сервисов магазина -->
+        <div class="services-slider">
+          <input type="radio" id="services-slider__slide1">
+          <input type="radio" id="services-slider__slide2">
+          <input type="radio" id="services-slider__slide3">
+          <div class="controls-services">
+            <label for="controls-services__slide1" class="link">Доставка</label>
+            <label for="controls-services__slide2" class="link">Гарантия</label>
+            <label for="controls-services__slide3" class="link">Кредит</label>
+          </div>
+          <div class="services-slide services--icon1">
+            <!-- services--slide1  модификатор для иконок в слайдах -->
+            <h3 class="title">
+              Доставка
+            </h3>
+            <p class="description">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
+              его на ваш этаж.
+            </p>
+          </div>
+          <div class="services-slide services--icon2">
+            <h3 class="title">
+              Гарантия
+            </h3>
+            <p class="description">
+              Если из-за возгарания купленного у нас у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+            </p>
+          </div>
+          <div class="services__slide services__icon3">
+            <h3 class="title">
+              Кредит
+            </h3>
+            <p class="description">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для
+              нашего банка, разумеется.
+            </p>
+          </div>
         </div>
-        <div class="services-slide services--icon1">
-          <!-- services--slide1  модификатор для иконок в слайдах -->
-          <h3 class="title">
-            Доставка
-          </h3>
+        <!-- Секция с логотипами производителей товаров-->
+        <section class="vendors">
+          <h2 class="visual-hidden">Поставщики товаров</h2>
+          <ul class="logo-list">
+            <li class="vendors__item">
+              <img src="#" alt="Логотип компании Dji" class="vendors__pic">
+            </li>
+            <li class="vendors__item">
+              <img src="#" alt="Логотип компании Sp Gadgets" class="vendors__pic">
+            </li>
+            <li class="vendors__item">
+              <img src="#" alt="Логотип компании GoPro" class="vendors__pic">
+            </li>
+            <li class="vendors__item">
+              <img src="#" alt="Логотип компании Vive" class="vendors__pic">
+            </li>
+          </ul>
+        </section>
+        <!-- Секция описания магазина -->
+        <section class="about">
+          <h2 class="title">О нас</h2>
           <p class="description">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
-            его на ваш этаж.
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
-        </div>
-        <div class="services-slide services--icon2">
-          <h3 class="title">
-            Гарантия
-          </h3>
           <p class="description">
-            Если из-за возгарания купленного у нас у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
-        </div>
-        <div class="services__slide services__icon3">
-          <h3 class="title">
-            Кредит
-          </h3>
+          <ul class="partners">
+            <li class="partners__item">Деловые Линии</li>
+            <li class="partners__item">Автотрейдинг</li>
+            <li class="partners__item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="link">Подробнее о нас</a>
+        </section>
+        <!-- Секция с контактами магазина -->
+        <section class="contacts">
+          <h2 class="title">Контакты</h2>
           <p class="description">
-            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для
-            нашего банка, разумеется.
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
-        </div>
+          <a href="https://yandex.ru/maps/" class="map-link">
+            <img src="#" alt="Место расположения магазина на карте" class="map-pic">
+          </a>
+          <a href="#" class="link">Напишите нам</a>
+        </section>
       </div>
-      <!-- Секция с логотипами производителей товаров-->
-      <section class="vendors">
-        <h2 class="visual-hidden">Поставщики товаров</h2>
-        <ul class="logo-list">
-          <li class="vendors__item">
-            <img src="#" alt="Логотип компании Dji" class="vendors__pic">
-          </li>
-          <li class="vendors__item">
-            <img src="#" alt="Логотип компании Sp Gadgets" class="vendors__pic">
-          </li>
-          <li class="vendors__item">
-            <img src="#" alt="Логотип компании GoPro" class="vendors__pic">
-          </li>
-          <li class="vendors__item">
-            <img src="#" alt="Логотип компании Vive" class="vendors__pic">
-          </li>
-        </ul>
-      </section>
-      <!-- Секция описания магазина -->
-      <section class="about">
-        <h2 class="title">О нас</h2>
-        <p class="description">
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-        </p>
-        <p class="description">
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
-        </p>
-        <ul class="partners">
-          <li class="partners__item">Деловые Линии</li>
-          <li class="partners__item">Автотрейдинг</li>
-          <li class="partners__item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="link">Подробнее о нас</a>
-      </section>
-      <!-- Секция с контактами магазина -->
-      <section class="contacts">
-        <h2 class="title">Контакты</h2>
-        <p class="description">
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-        </p>
-        <a href="https://yandex.ru/maps/" class="map-link">
-          <img src="#" alt="Место расположения магазина на карте" class="map-pic">
-        </a>
-        <a href="#" class="link">Напишите нам</a>
-      </section>
-    </div>
     </main>
   </div>
-  <footer class="footer">    
-      <h1 class="footer__title">
-        <a class="footer__link">DEVICE</a>
-      </h1>
+  <footer class="footer">
+    <h1 class="footer__title">
+      <a class="footer__link">DEVICE</a>
+    </h1>
     <div class="user-block__option">
       <div class="user-block__entry">
         <a href="#" class="user-block__link">Войти</a>
@@ -314,7 +330,6 @@
       Тел.:
       <a href="tel:+74954959595" class="phone-link">+7 (495) 495-95-95</a>
     </span>
-    <span class="footer__line"></span>
     <ul class="social">
       <li class="social__item">
         <a href="https://facebook.com" class="social__link social__link--facebook" title="Мы в facebook">Мы в facebook</a>
@@ -326,21 +341,22 @@
         <a href="https://twitter.com" class="social__link social__link--twitter" title="Мы в twitter">Мы в twitter</a>
       </li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" title="Профессиональный HTML и CSS, уровень 1">Сайт разработан HTML-Академией</a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" title="Профессиональный HTML и CSS, уровень 1">Сайт
+      разработан HTML-Академией</a>
   </footer>
   <!-- Popups -->
   <div class="popup-write-us">
     <button type="button" class="btn-close">Закрыть модальное окно</button>
     <form action="#" method="post" class="popup-write-us__form">
       <label for="name" class="title-field">Ваше имя:
-        <input type="text" id="name" placeholder="Представьтесь, пожалуйста">
+        <input type="text" id="name" placeholder="Имя Фамилия">
       </label>
       <label for="email" class="title-field">Ваш e-mail:
-        <input type="email" id="email" placeholder="Для отправки ответа">
+        <input type="email" id="email" placeholder="email@example.ru">
       </label>
       <b class="title-field">Текст письма:</b>
       <textarea id="message" cols="30" rows="3" placeholder="В свободной форме"></textarea>
-      <button type="submit" value="Отправить"></button>
+      <button type="submit" value="Отправить" class="link">Отправить</button>
     </form>
     <div class="popup-map">
       <button type="button" class="btn-close">Закрыть модальное окно</button>
@@ -350,5 +366,4 @@
     </div>
   </div>
 </body>
-
 </html>
