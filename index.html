@@ -86,16 +86,16 @@
     </header>
     <!-- Основной слайдер -->
     <div class="promo-slider">
-      <input type="radio" id="promo-slider__slide1">
-      <input type="radio" id="promo-slider__slide2">
-      <input type="radio" id="promo-slider__slide3">
+      <input type="radio" name="promo" id="promo-slider__slide1">
+      <input type="radio" name="promo" id="promo-slider__slide2">
+      <input type="radio" name="promo" id="promo-slider__slide3">
       <div class="controls-promo">
         <label for="controls-promo__slide1"></label>
         <label for="controls-promo__slide2"></label>
         <label for="controls-promo__slide3"></label>
       </div>
       <div class="promo-slide1">
-        <img src="img/slider-promo__slide1.png" width="384" height="486" alt="Изображение промо монопод" class="slide-pic">
+        <img src="img/promo-slide1.png" width="384" height="486" alt="Изображение промо монопод" class="slide-pic">
         <div class="slide-content">
           <h3 class="title">
             Делай селфи, как Бен Стиллер!
@@ -119,7 +119,7 @@
         </div>
       </div>
       <div class="promo-slide2">
-        <img src="img/slider-promo__slide2.png" width="345" height="485" alt="Изображение промо фитнесс-браслет" class="slide-pic">
+        <img src="img/promo-slide2.png" width="345" height="485" alt="Изображение промо фитнесс-браслет" class="slide-pic">
         <div class="slide-content">
           <h3 class="title">
             Худеем правильно!
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div class="promo-slide3">
-        <img src="img/slider-promo__slide3.png" width="526" height="334" alt="Изображение промо квадракоптер" class="slide3-pic">
+        <img src="img/promo-slide3.png" width="526" height="334" alt="Изображение промо квадракоптер" class="slide3-pic">
         <div class="slide-content">
           <h3 class="title">
             Порхает как бабочка, жалит как пчела!
@@ -168,7 +168,7 @@
           <ul class="goods-category__list">
             <li class="goods-category__item">
               <a href="#" class="goods-category__link">
-                <img src="img/svg/category__vr.svg" width="97" height="55" alt="Категория виртуальная реальность" class="goods-category__pic">
+                <img src="img/svg/vr.svg" width="97" height="55" alt="Категория виртуальная реальность" class="goods-category__pic">
               </a>
               <span class="subtitle">
                 <a href="#">Виртуальная реальность</a>
@@ -176,7 +176,7 @@
             </li>
             <li class="goods-category__item">
               <a href="catalog.html" class="goods-category__link">
-                <img src="img/svg/category__monopods.svg" width="86" height="117" alt="Категория моноподы для селфи" class="goods-category__pic">
+                <img src="img/svg/monopods.svg" width="86" height="117" alt="Категория моноподы для селфи" class="goods-category__pic">
               </a>
               <span class="subtitle">
                 <a href="catalog.html">Моноподы для селфи</a>
@@ -184,7 +184,7 @@
             </li>
             <li class="goods-category__item">
               <a href="#" class="goods-category__link">
-                <img src="img/svg/category__cameras.svg" width="71" height="87" alt="Категория экшн-камеры" class="goods-category__pic">
+                <img src="img/svg/cameras.svg" width="71" height="87" alt="Категория экшн-камеры" class="goods-category__pic">
               </a>
               <span class="subtitle">
                 <a href="#">Экшн-камеры</a>
@@ -192,7 +192,7 @@
             </li>
             <li class="goods-category__item">
               <a href="#" class="goods-category__link">
-                <img src="img/svg/category__bracelets.svg" width="107" height="65" alt="Категория фитнесс-браслеты" class="goods-category__pic">
+                <img src="img/svg/bracelets.svg" width="107" height="65" alt="Категория фитнесс-браслеты" class="goods-category__pic">
               </a>
               <span class="subtitle">
                 <a href="#">Фитнесс браслеты</a>
@@ -200,7 +200,7 @@
             </li>
             <li class="goods-category__item">
               <a href="#" class="goods-category__link">
-                <img src="img/svg/category__watch.svg" width="56" height="98" alt="Категория умные часы" class="goods-category__pic">
+                <img src="img/svg/watch.svg" width="56" height="98" alt="Категория умные часы" class="goods-category__pic">
               </a>
               <span class="subtitle">
                 <a href="#">Умные часы</a>
@@ -208,7 +208,7 @@
             </li>
             <li class="goods-category__item">
               <a href="#" class="goods-category__link">
-                <img src="img/svg/category__helicopters.svg" width="132" height="69" alt="Категория квадрокоптеры" class="goods-category__pic">
+                <img src="img/svg/helicopters.svg" width="132" height="69" alt="Категория квадрокоптеры" class="goods-category__pic">
               </a>
               <span class="subtitle">
                 <a href="#">Квадрокоптеры</a>
@@ -218,9 +218,9 @@
         </section>
         <!-- Слайдер сервисов магазина -->
         <div class="services-slider">
-          <input type="radio" id="services-slider__slide1">
-          <input type="radio" id="services-slider__slide2">
-          <input type="radio" id="services-slider__slide3">
+          <input type="radio" name="services" id="services-slider__slide1">
+          <input type="radio" name="services" id="services-slider__slide2">
+          <input type="radio" name="services" id="services-slider__slide3">
           <div class="controls-services">
             <label for="controls-services__slide1" class="link">Доставка</label>
             <label for="controls-services__slide2" class="link">Гарантия</label>
@@ -259,16 +259,16 @@
           <h2 class="visual-hidden">Поставщики товаров</h2>
           <ul class="logo-list">
             <li class="vendors__item">
-              <img src="img/logo__dji.jpg" width="260" height="100" alt="Логотип компании Dji" class="vendors__pic">
+              <img src="img/dji.jpg" width="260" height="100" alt="Логотип компании Dji" class="vendors__pic">
             </li>
             <li class="vendors__item">
-              <img src="img/logo__sp_gadgets.jpg" width="260" height="100" alt="Логотип компании Sp Gadgets" class="vendors__pic">
+              <img src="img/sp_gadgets.jpg" width="260" height="100" alt="Логотип компании Sp Gadgets" class="vendors__pic">
             </li>
             <li class="vendors__item">
-              <img src="img/logo__gopro.jpg" width="260" height="100" alt="Логотип компании GoPro" class="vendors__pic">
+              <img src="img/gopro.jpg" width="260" height="100" alt="Логотип компании GoPro" class="vendors__pic">
             </li>
             <li class="vendors__item">
-              <img src="img/logo__vive.jpg" width="260" height="100" alt="Логотип компании Vive" class="vendors__pic">
+              <img src="img/vive.jpg" width="260" height="100" alt="Логотип компании Vive" class="vendors__pic">
             </li>
           </ul>
         </section>
@@ -295,7 +295,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <a href="https://yandex.ru/maps/" class="map-link">
-            <img src="img/map__shop.jpg" width="560" height="222" alt="Место расположения магазина на карте" class="map-pic">
+            <img src="img/map-shop.jpg" width="560" height="222" alt="Место расположения магазина на карте" class="map-pic">
           </a>
           <a href="#" class="link">Напишите нам</a>
         </section>
@@ -369,7 +369,7 @@
     <div class="popup-map">
       <button type="button" class="btn-close">Закрыть модальное окно</button>
       <a href="https://yandex.ru/maps/" class="map-link">
-        <img src="img/map__popup.jpg" width="960" height="559" alt="Адрес магазина: ул. Строителей 15" class="map-pic">
+        <img src="img/map-popup.jpg" width="960" height="559" alt="Адрес магазина: ул. Строителей 15" class="map-pic">
       </a>
     </div>
   </div>
