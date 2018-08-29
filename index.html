@@ -23,10 +23,10 @@
         <section class="user-block">
           <div class="user-block__search">
             <form action="#" method="GET" class="form-search">
-              <label for="search">
-                <input type="text" id="search" placeholder="Поиск по сайту">
+              <label for="search"> Поиск по сайту:
+                <input type="text" name="search" id="search" placeholder="Поиск по сайту">
               </label>
-              <a href="#" class="form-search__link visually-hidden">Найти</a>
+              <button type="submit" value="Найти" class="form-search__link visually-hidden">Найти</button>             
             </form>
           </div>
           <div class="user-block__options">
@@ -90,9 +90,9 @@
       <input type="radio" name="promo" id="promo-slider__slide2">
       <input type="radio" name="promo" id="promo-slider__slide3">
       <div class="controls-promo">
-        <label for="controls-promo__slide1"></label>
-        <label for="controls-promo__slide2"></label>
-        <label for="controls-promo__slide3"></label>
+        <label for="controls-promo__slide1">Промо-слайд 1</label>
+        <label for="controls-promo__slide2">Промо-слайд 2</label>
+        <label for="controls-promo__slide3">Промо-слайд 3</label>
       </div>
       <div class="promo-slide1">
         <img src="img/promo-slide1.png" width="384" height="486" alt="Изображение промо монопод" class="slide-pic">
@@ -357,13 +357,13 @@
     <button type="button" class="btn-close">Закрыть модальное окно</button>
     <form action="#" method="post" class="popup-write-us__form">
       <label for="name" class="title-field">Ваше имя:
-        <input type="text" id="name" placeholder="Имя Фамилия">
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       </label>
       <label for="email" class="title-field">Ваш e-mail:
-        <input type="email" id="email" placeholder="email@example.ru">
+        <input type="email" name="email" id="email" placeholder="email@example.ru">
       </label>
       <b class="title-field">Текст письма:</b>
-      <textarea id="message" cols="30" rows="3" placeholder="В свободной форме"></textarea>
+      <textarea id="message" name="message" cols="30" rows="3" placeholder="В свободной форме"></textarea>
       <button type="submit" value="Отправить" class="link">Отправить</button>
     </form>
     <div class="popup-map">
