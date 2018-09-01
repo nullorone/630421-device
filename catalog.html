@@ -23,7 +23,7 @@
         <section class="user-block">
           <div class="user-block__search">
             <form action="#" method="GET" class="form-search">
-              <label for="search">
+              <label for="search"> Поиск по сайту:
                 <input type="text" id="search" placeholder="Поиск по сайту">
               </label>
               <a href="#" class="form-search__link visually-hidden">Найти</a>
@@ -59,7 +59,7 @@
                 <li class="category__item">
                   <a href="#" class="category__link">Фитнесс-браслеты</a>
                 </li>
-                <li class="category-item">
+                <li class="category__item">
                   <a href="#" class="category__link">Умные часы</a>
                 </li>
               </ul>
@@ -105,9 +105,11 @@
         <form action="#" method="get" class="settings">
           <fieldset class="settings__block">
             <legend class="settings__title">Стоимость</legend>
-            <span for="range-start">от 0</span>
+            <span class="range-start">от 0</span>
+            <input type="text" name="filter-start" class="visually-hidden">
             <span class="range-line"></span>
-            <span for="range-end">до 5000</span>
+            <span class="range-end">до 5000</span>
+            <input type="text" name="filter-end" class="visually-hidden">
           </fieldset>
           <fieldset class="settings__block">
             <legend class="settings__title">Цвет</legend>
@@ -159,7 +161,7 @@
           <li class="goods__item">
             <img src="img/item1.jpg" width="360" height="380" alt="Изображение товара любительская селфи-палка"
               class="goods__pic">
-            <span class="subtitle">Любительская селфи-палка</span>
+            <p class="title-item">Любительская селфи-палка</p>
             <span class="goods__cost">500 руб.</span>
             <a href="#" class="link">В корзину</a>
             <a href="#" class="link">Добавить к сравнению</a>
@@ -167,7 +169,7 @@
           <li class="goods__item">
             <img src="img/item2.jpg" width="360" height="380" alt="Изображение товара профессиональная селфи-палка"
               class="goods__pic">
-            <span class="subtitle">Профессиональная селфи-палка </span>
+            <p class="title-item">Профессиональная селфи-палка </p>
             <span class="goods__cost">1 500 руб.</span>
             <a href="#" class="link">В корзину</a>
             <a href="#" class="link">Добавить к сравнению</a>
@@ -175,7 +177,7 @@
           <li class="goods__item">
             <img src="img/item3.jpg" width="360" height="380" alt="Изображение товара непотопляемая селфи-палка"
               class="goods__pic">
-            <span class="subtitle">Непотопляемая селфи-палка</span>
+            <p class="title-item">Непотопляемая селфи-палка</p>
             <span class="goods__cost">2 500 руб.</span>
             <a href="#" class="link">В корзину</a>
             <a href="#" class="link">Добавить к сравнению</a>
@@ -183,7 +185,7 @@
           <li class="goods__item">
             <img src="img/item4.jpg" width="360" height="380" alt="Изображение товара селфи-палка «Следуй за мной»"
               class="goods__pic">
-            <span class="subtitle">Селфи-палка «Следуй за мной»</span>
+            <p class="title-item">Селфи-палка «Следуй за мной»</p>
             <span class="goods__cost">4 900 руб.</span>
             <a href="#" class="link">В корзину</a>
             <a href="#" class="link">Добавить к сравнению</a>
