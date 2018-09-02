@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Девайс</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <!-- Шапка сайта -->
-    <header class="header">
-      <div class="container">
+    <div class="container">
+      <header class="header">
         <h1 class="header__title">
           <a class="header__link">DEVICE</a>
         </h1>
@@ -34,7 +34,7 @@
               <a href="#" class="user-block__link">Войти</a>
               <a href="#" class="user-block__link visually-hidden">Выйти</a>
             </div>
-            <div class="user-block__shop">
+          <div class="user-block__shop">
               <a href="#" class="user-block__link">Сравнить</a>
               <a href="#" class="user-block__link">Корзина</a>
             </div>
@@ -43,7 +43,9 @@
         <!-- Главная навигация -->
         <nav class="navigation">
           <ul class="catalog">
-            <li class="catalog__title">Каталог товаров
+            <li class="catalog__title">
+              <a href="#" class="catalog__link">Каталог товаров</a>
+              <div class="catalog__wrapper">
               <ul class="category">
                 <li class="category__item">
                   <a href="#" class="category__link">Виртуальная реальность</a>
@@ -68,6 +70,7 @@
                   <a href="#" class="category__link">Квадрокоптеры</a>
                 </li>
               </ul>
+            </div>
             </li>
           </ul>
           <ul class="services">
@@ -82,23 +85,24 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
+    </div>
     <!-- Основной слайдер -->
     <div class="promo-slider">
-      <input type="radio" name="promo" id="promo-slider__slide1">
+      <div class="container">
+      <input type="radio" name="promo" id="promo-slider__slide1" checked>
       <input type="radio" name="promo" id="promo-slider__slide2">
       <input type="radio" name="promo" id="promo-slider__slide3">
       <div class="controls-promo">
-        <label for="controls-promo__slide1">Промо-слайд 1</label>
-        <label for="controls-promo__slide2">Промо-слайд 2</label>
-        <label for="controls-promo__slide3">Промо-слайд 3</label>
+        <label for="promo-slider__slide1">Промо-слайд 1</label>
+        <label for="promo-slider__slide2">Промо-слайд 2</label>
+        <label for="promo-slider__slide3">Промо-слайд 3</label>
       </div>
       <div class="promo-slide1">
         <img src="img/promo-slide1.png" width="384" height="486" alt="Изображение промо монопод" class="slide-pic">
         <div class="slide-content">
           <h3 class="title">
-            Делай селфи, как Бен Стиллер!
+            Делай селфи,<br> как Бен Стиллер!
           </h3>
           <p class="description">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -122,7 +126,7 @@
         <img src="img/promo-slide2.png" width="345" height="485" alt="Изображение промо фитнесс-браслет" class="slide-pic">
         <div class="slide-content">
           <h3 class="title">
-            Худеем правильно!
+            Худеем<br> правильно!
           </h3>
           <p class="description">
             Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -161,6 +165,7 @@
         </div>
       </div>
     </div>
+    </div>
     <main class="main">
       <div class="container">
         <!-- Секция с разделами товаров -->
@@ -175,11 +180,11 @@
               </p>
             </li>
             <li class="goods-category__item">
-              <a href="catalog.html" class="goods-category__link">
+              <a href="catalog.html" class="goods-category__link goods-category__link--bottom-pic">
                 <img src="img/svg/popular-2.svg" width="86" height="117" alt="Категория моноподы для селфи" class="goods-category__pic">
               </a>
               <p class="title-item">
-                <a href="catalog.html">Моноподы для селфи</a>
+                <a href="catalog.html">Моноподы<br> для селфи</a>
               </p>
             </li>
             <li class="goods-category__item">
@@ -215,10 +220,12 @@
               </p>
             </li>
           </ul>
+        </div>
         </section>
         <!-- Слайдер сервисов магазина -->
         <div class="services-slider">
-          <input type="radio" name="services" id="services-slider__slide1">
+          <div class="container">
+          <input type="radio" name="services" id="services-slider__slide1" checked>
           <input type="radio" name="services" id="services-slider__slide2">
           <input type="radio" name="services" id="services-slider__slide3">
           <div class="controls-services">
@@ -254,8 +261,10 @@
             </p>
           </div>
         </div>
+        </div>
         <!-- Секция с логотипами производителей товаров-->
         <section class="vendors">
+          <div class="container">
           <h2 class="visually-hidden">Поставщики товаров</h2>
           <ul class="logo-list">
             <li class="vendors__item">
@@ -271,8 +280,11 @@
               <img src="img/vive.jpg" width="260" height="100" alt="Логотип компании Vive" class="vendors__pic">
             </li>
           </ul>
+        </div>
         </section>
         <!-- Секция описания магазина -->
+        <section class="company-block">
+          <div class="container">
         <section class="about">
           <h2 class="title">О нас</h2>
           <p class="description">
@@ -300,14 +312,16 @@
           <a href="#" class="link">Напишите нам</a>
         </section>
       </div>
+    </section>
     </main>
   </div>
   <footer class="footer">
+    <div class="container">
     <div class="footer__row">
       <h1 class="footer__title">
         <a class="footer__link">DEVICE</a>
       </h1>
-      <div class="user-block__option">
+      <div class="user-block__options">
         <div class="user-block__entry">
           <a href="#" class="user-block__link">Войти</a>
           <a href="#" class="user-block__link visually-hidden">Выйти</a>
@@ -351,6 +365,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" title="Профессиональный HTML и CSS, уровень 1">Сайт
         разработан HTML-Академией</a>
     </div>
+  </div>
   </footer>
   <!-- Popups -->
   <div class="popup-write-us">

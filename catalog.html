@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <title>Моноподы для селфи</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
   <div class="wrapper">
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
         <h1 class="header__title">
-          <a class="header__link">DEVICE</a>
+          <a href="index.html" class="header__link">DEVICE</a>
         </h1>
         <!-- Секция взаимодействия пользователя -->
         <section class="user-block">
@@ -26,7 +26,7 @@
               <label for="search"> Поиск по сайту:
                 <input type="text" id="search" placeholder="Поиск по сайту">
               </label>
-              <a href="#" class="form-search__link visually-hidden">Найти</a>
+              <button type="submit" value="Найти" class="form-search__link visually-hidden">Найти</button>
             </form>
           </div>
           <div class="user-block__options">
@@ -43,7 +43,8 @@
         <!-- Главная навигация -->
         <nav class="navigation">
           <ul class="catalog">
-            <li class="catalog__title">Каталог товаров
+            <li class="catalog__title">
+                <a href="#" class="catalog__link">Каталог товаров</a>
               <ul class="category">
                 <li class="category__item">
                   <a href="#" class="category__link">Виртуальная реальность</a>
@@ -139,7 +140,7 @@
         <h3 class="parameters__title">Сортировка:</h3>
         <ul class="parameters__list">
           <li class="parameters__item">
-            <a href="#" class="parameters__link">По цене</a>
+            <a href="#" class="parameters__link parameters__link--current">По цене</a>
           </li>
           <li class="parameters__item">
             <a href="#" class="parameters__link">По типу</a>
@@ -164,7 +165,7 @@
             <p class="title-item">Любительская селфи-палка</p>
             <span class="goods__cost">500 руб.</span>
             <a href="#" class="link">В корзину</a>
-            <a href="#" class="link">Добавить к сравнению</a>
+            <a href="#" class="link link-compare">Добавить к сравнению</a>
           </li>
           <li class="goods__item">
             <img src="img/item2.jpg" width="360" height="380" alt="Изображение товара профессиональная селфи-палка"
@@ -172,7 +173,7 @@
             <p class="title-item">Профессиональная селфи-палка </p>
             <span class="goods__cost">1 500 руб.</span>
             <a href="#" class="link">В корзину</a>
-            <a href="#" class="link">Добавить к сравнению</a>
+            <a href="#" class="link link-compare">Добавить к сравнению</a>
           </li>
           <li class="goods__item">
             <img src="img/item3.jpg" width="360" height="380" alt="Изображение товара непотопляемая селфи-палка"
@@ -180,7 +181,7 @@
             <p class="title-item">Непотопляемая селфи-палка</p>
             <span class="goods__cost">2 500 руб.</span>
             <a href="#" class="link">В корзину</a>
-            <a href="#" class="link">Добавить к сравнению</a>
+            <a href="#" class="link link-compare">Добавить к сравнению</a>
           </li>
           <li class="goods__item">
             <img src="img/item4.jpg" width="360" height="380" alt="Изображение товара селфи-палка «Следуй за мной»"
@@ -188,7 +189,7 @@
             <p class="title-item">Селфи-палка «Следуй за мной»</p>
             <span class="goods__cost">4 900 руб.</span>
             <a href="#" class="link">В корзину</a>
-            <a href="#" class="link">Добавить к сравнению</a>
+            <a href="#" class="link link-compare">Добавить к сравнению</a>
           </li>
         </ul>
       </section>
@@ -197,7 +198,7 @@
         <a href="#" class="pagination__back">Назад</a>
         <ul class="pagination__list">
           <li class="pagination__item">
-            <a href="#" class="pagination__link">1</a>
+            <a href="#" class="pagination__link pagination__link--current">1</a>
           </li>
           <li class="pagination__item">
             <a href="#" class="pagination__link">2</a>
