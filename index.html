@@ -23,7 +23,7 @@
           <div class="user-block__search">
             <form action="#" method="GET" class="form-search">
               <label for="search"> Поиск по сайту:</label>
-                <input type="text" name="search" id="search" placeholder="Поиск по сайту">
+              <input type="text" name="search" id="search" placeholder="Поиск по сайту">
               <button type="submit" value="Найти" class="form-search__link">Найти</button>
             </form>
           </div>
@@ -227,36 +227,39 @@
           <input type="radio" name="services" id="services-slider__slide2">
           <input type="radio" name="services" id="services-slider__slide3">
           <div class="controls-services">
-            <label for="controls-services__slide1" class="link">Доставка</label>
-            <label for="controls-services__slide2" class="link">Гарантия</label>
-            <label for="controls-services__slide3" class="link">Кредит</label>
+
+            <label for="services-slider__slide1" class="link">Доставка</label>
+            <label for="services-slider__slide2" class="link">Гарантия</label>
+            <label for="services-slider__slide3" class="link">Кредит</label>
           </div>
-          <div class="services-slide services--icon1">
-            <!-- services--slide1  модификатор для иконок в слайдах -->
-            <h3 class="title">
-              Доставка
-            </h3>
-            <p class="description">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
-              его на ваш этаж.
-            </p>
-          </div>
-          <div class="services-slide services--icon2">
-            <h3 class="title">
-              Гарантия
-            </h3>
-            <p class="description">
-              Если из-за возгарания купленного у нас у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-            </p>
-          </div>
-          <div class="services__slide services__icon3">
-            <h3 class="title">
-              Кредит
-            </h3>
-            <p class="description">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для
-              нашего банка, разумеется.
-            </p>
+          <div class="services-slides">
+            <div class="services-slide services-slide--icon1">
+              <!-- services--slide1  модификатор для иконок в слайдах -->
+              <h3 class="title">
+                Доставка
+              </h3>
+              <p class="description">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
+                его на ваш этаж.
+              </p>
+            </div>
+            <div class="services-slide services-slide--icon2">
+              <h3 class="title">
+                Гарантия
+              </h3>
+              <p class="description">
+                Если из-за возгарания купленного у нас у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+              </p>
+            </div>
+            <div class="services-slide services-slide--icon3">
+              <h3 class="title">
+                Кредит
+              </h3>
+              <p class="description">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для
+                нашего банка, разумеется.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -366,7 +369,7 @@
     </div>
   </footer>
   <!-- Popups -->
-  <!-- <div class="popup-write-us">
+  <div class="popup-write-us">
     <button type="button" class="btn-close">Закрыть модальное окно</button>
     <form action="#" method="post" class="popup-write-us__form">
       <label for="name" class="title-field">Ваше имя:
@@ -380,13 +383,13 @@
       <button type="submit" value="Отправить" class="link">Отправить</button>
     </form>
   </div>
-    <div class="popup-map">
-      <button type="button" class="btn-close">Закрыть модальное окно</button>
-      <a href="https://yandex.ru/maps/" class="map-link">
-        <img src="img/map-popup.jpg" width="960" height="559" alt="Адрес магазина: ул. Строителей 15" class="map-pic">
-      </a>
-    </div> -->
-
+  <div class="popup-map">
+    <button type="button" class="btn-close">Закрыть модальное окно</button>
+    <a href="https://yandex.ru/maps/" class="map-link">
+      <img src="img/map-popup.jpg" width="960" height="559" alt="Адрес магазина: ул. Строителей 15" class="map-pic">
+    </a>
+  </div>
+  <div class="popup-overlay"></div>
 </body>
 
 </html>
