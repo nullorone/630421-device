@@ -2,6 +2,7 @@
   font-weight: 300;
   font-family: "Gilroy";
   font-style: normal;
+  font-display: block;
 
   src: local("Gilroy Light"), local("Gilroy-Light"),
     url("../fonts/gilroylight.woff2") format("woff2"),
@@ -11,6 +12,7 @@
   font-weight: 800;
   font-family: "Gilroy";
   font-style: normal;
+  font-display: block;
 
   src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
     url("../fonts/gilroyextrabold.woff2") format("woff2"),
@@ -20,6 +22,7 @@
   font-weight: 300;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: block;
 
   src: local("Open Sans"), url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff");
@@ -28,6 +31,7 @@
   font-weight: 400;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: block;
 
   src: local("Open Sans"), url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
@@ -1489,9 +1493,9 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
 .goods__block .link {
   z-index: 21;
 }
-/* .goods__item:hover > .goods__block--cart {
+.goods__item:hover > .goods__block--cart {
   visibility: visible;
-} */
+}
 .goods__item:hover > .goods__pic {
 
   background-color: #000000;
