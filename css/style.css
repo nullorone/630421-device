@@ -1771,8 +1771,219 @@ margin-left: 16px;
 .user-block__link:active {
   opacity: 0.3;
 }
-.popup-write-us,
-.popup-map,
+/* Модальные окна */
+.popup-write-us {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+
+  visibility: hidden;
+  z-index: 1000;
+  width: 860px;
+  min-height: 460px;
+  padding-top: 93px;
+  padding-bottom: 90px;
+  padding-left: 100px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.popup-write-us__form {
+  width: 760px;
+}
+.popup-write-us__form input,
+textarea {
+  padding-left: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: none;
+  opacity: 0.5;
+}
+.popup-write-us__form input {
+  width: 290px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  padding-right: 50px;
+}
+.popup-write-us__form label {
+  display: inline-block;
+  width: 360px;
+}
+.popup-write-us__form label:nth-child(2n) {
+  margin-left: 35px;
+}
+.popup-write-us__form textarea {
+  width: 760px;
+  height: 156px;
+  margin-top: 10px;
+  margin-bottom: 52px;
+  padding-top: 18px;
+  box-sizing: border-box;
+}
+.popup-write-us__form input:hover,
+.popup-write-us__form textarea:hover {
+  opacity: 0.8;
+}
+.popup-write-us__form input:focus {
+  height: 44px;
+  padding-right: 47px;
+  padding-left: 17px;
+
+  background-color: #ffffff;
+  border: 3px solid #f0c52e;
+  outline: none;
+  opacity: 0.5;
+}
+.popup-write-us__form textarea:focus {
+  width: 757px;
+  height: 156px;
+  padding-top: 15px;
+  padding-left: 17px;
+
+  background-color: #ffffff;
+  border: 3px solid #f0c52e;
+  outline: none;
+  opacity: 0.5;
+}
+.popup-write-us__form input:invalid {
+  background-color: #edb5b5;
+  opacity: 0.5;
+}
+.popup-write-us__form .link {
+  height: 40px;
+  border: none;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.popup-write-us__form .link:active {
+  outline: none;
+}
+.popup-map {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  z-index: 999;
+  visibility: hidden;
+  width: 960px;
+  height: 559px;
+  transform: translateX(-50%);
+}
+
+.btn-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+  opacity: 0.5;
+  background-color: #f0c52e;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-close:hover,
+.btn-close:focus {
+  opacity: 1;
+}
+.btn-close:active {
+  opacity: 0.3;
+  outline: none;
+}
+.btn-close::before {
+  content: "";
+
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-left: 6px;
+
+  background-color: #ffffff;
+}
+.btn-close::after {
+  content: "";
+
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-top: -2px;
+  margin-left: 6px;
+
+  background-color: #ffffff;
+}
+.btn-close::before {
+  transform: rotate(45deg);
+}
+.btn-close::after {
+  transform: rotate(-45deg);
+}
+.title-field {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  color: #000000;
+}
+.popup-map .btn-close {
+  top: 22px;
+}
 .popup-overlay {
+  position: fixed;
   display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: #000000;
+  opacity: 0.3;
+}
+/* Анимация для модальных окон */
+@keyframes hideModal {
+  0% {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-1000%);
+  }
+  40% {
+    transform: translateX(10%);
+  }
+  80% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Стили модальных окон для JS */
+.popup-write-us--active {
+  visibility: visible;
+  animation-name: hideModal;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+.popup-map--active {
+  visibility: visible;
+  animation-name: slideLeft;
+  animation-duration: 1.2s;
+}
+.popup-overlay--active {
+  display: block;
 }
