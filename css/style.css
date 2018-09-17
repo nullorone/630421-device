@@ -1499,7 +1499,7 @@ letter-spacing: -0.14px;
 }
 /* Декоративные элементы-иконки */
 .user-block__link svg {
-margin-right: 8px;
+  margin-right: 8px;
 }
 .user-block__shop .user-block__link:nth-child(2) {
   margin-left: 34px;
@@ -1762,7 +1762,7 @@ margin-right: 8px;
   margin-right: 14px;
 }
 .inner-page .user-block__link--header-margin-left {
-margin-left: 16px;
+  margin-left: 16px;
 }
 .user-block__link:hover,
 .user-block__link:focus {
@@ -1780,9 +1780,8 @@ margin-left: 16px;
   visibility: hidden;
   z-index: 1000;
   width: 860px;
-  min-height: 460px;
   padding-top: 93px;
-  padding-bottom: 90px;
+  padding-bottom: 42px;
   padding-left: 100px;
   transform: translateX(-50%);
   background-color: #ffffff;
@@ -1843,8 +1842,6 @@ textarea {
   opacity: 0.5;
 }
 .popup-write-us__form textarea:focus {
-  width: 757px;
-  height: 156px;
   padding-top: 15px;
   padding-left: 17px;
 
@@ -1856,6 +1853,7 @@ textarea {
 .popup-write-us__form input:invalid {
   background-color: #edb5b5;
   opacity: 0.5;
+  border-color: #edb5b5;
 }
 .popup-write-us__form .link {
   height: 40px;
