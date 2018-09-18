@@ -1825,6 +1825,7 @@ textarea {
   margin-top: 10px;
   margin-bottom: 52px;
   padding-top: 18px;
+  resize: none;
   box-sizing: border-box;
 }
 .popup-write-us__form input:hover,
