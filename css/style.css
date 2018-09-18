@@ -78,7 +78,7 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20;
+  padding: 0 20px;
 }
 .header {
   position: relative;
@@ -620,7 +620,7 @@ input[id="services-slider__slide3"]:checked
   width: 32px;
   height: 32px;
   margin-right: 23px;
-opacity: 0.3;
+  opacity: 0.3;
   border-radius: 50%;
 }
 .social__item:hover,
@@ -829,7 +829,7 @@ opacity: 0.3;
   padding-top: 23px;
   padding-right: 68px;
   padding-left: 60px;
-padding-bottom: 3px;
+  padding-bottom: 3px;
   background-color: #dcdcdc;
 }
 .parameters__block {
@@ -930,7 +930,7 @@ padding-bottom: 3px;
 .pagination__back,
 .pagination__next {
   display: inline-block;
-padding: 23px 27px 23px 31px;
+  padding: 23px 27px 23px 31px;
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
@@ -940,7 +940,6 @@ padding: 23px 27px 23px 31px;
   letter-spacing: 3.3px;
 }
 .pagination__next {
-
   text-align: right;
 }
 .pagination__back:hover,
@@ -1269,7 +1268,7 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
 .about .description:nth-child(3) {
   margin-top: 31px;
   width: 480px;
-letter-spacing: -0.14px;
+  letter-spacing: -0.14px;
 }
 .partners {
   margin-top: 66px;
@@ -1950,6 +1949,11 @@ textarea {
   background-color: #000000;
   opacity: 0.3;
 }
+.popup-map iframe {
+  border: none;
+  width: 960px;
+  height: 559px;
+}
 /* Анимация для модальных окон */
 @keyframes hideModal {
   0% {
@@ -1972,14 +1976,22 @@ textarea {
   }
 }
 @keyframes errorField {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     transform: rotate(-1deg);
     outline: 2px solid red;
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     transform: rotate(1deg);
   }
 }
