@@ -7,8 +7,8 @@ var btnCloseMap = document.querySelector('.popup-map .btn-close');
 var modalMap = document.querySelector('.popup-map');
 var mapPic = document.querySelector('.popup-map .map-pic');
 var form = document.querySelector('.popup-write-us__form');
-var formLogin = document.querySelector('.popup-write-us__form #name');
-var formEmail = document.querySelector('.popup-write-us__form #email');
+var formLogin = document.querySelector('.popup-write-us__form .title-field__name');
+var formEmail = document.querySelector('.popup-write-us__form .title-field__email');
 var isStorageSupport = true;
 var storage = '';
 var iframe = document.querySelector('.popup-map iframe');
@@ -32,6 +32,8 @@ try {
 // Методы при взаимодействии с элементами
 function hideModalWriteUs(evt) {
   evt.preventDefault();
+  formLogin.classList.remove('popup-write-us--error');
+  formEmail.classList.remove('popup-write-us--error');
   overlay.classList.remove('popup-overlay--active');
   modalWriteUs.classList.remove('popup-write-us--active');
 }
@@ -68,15 +70,22 @@ function showModalMap(evt) {
     }});
 }
 function formValue(evt) {
-  if (!formLogin.value || !formEmail.value) {
+
+  if (!formLogin.value) {
     evt.preventDefault();
-// Добавить анимацию на поля без значений
+    formLogin.classList.remove('popup-write-us--error');
+    formLogin.offsetWidth = formLogin.offsetWidth;
+    formLogin.classList.add('popup-write-us--error');
+  } else if (!formEmail.value) {
+    evt.preventDefault();
+    formEmail.classList.remove('popup-write-us--error');
+    formEmail.offsetWidth = formEmail.offsetWidth;
+    formEmail.classList.add('popup-write-us--error');
   } else {
     if (isStorageSupport) {
     localStorage.setItem('userLogin', formLogin.value);
     localStorage.setItem('userPassword', formEmail.value);
   }};
-  // добавить удаление класса с ошибкой ввода поля
 }
 // Действия с использованием методов
 linkFormWriteUs.addEventListener('click', showModalWriteUs);
@@ -86,3 +95,4 @@ overlay.addEventListener('click', hideModalMap);
 btnClose.addEventListener('click', hideModalWriteUs);
 btnCloseMap.addEventListener('click', hideModalMap);
 form.addEventListener('submit', formValue);
+

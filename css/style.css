@@ -1971,11 +1971,28 @@ textarea {
     transform: translateX(-50%);
   }
 }
+@keyframes errorField {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(-1deg);
+    outline: 2px solid red;
+  }
+  20%, 40%, 60%, 80% {
+    transform: rotate(1deg);
+  }
+}
 /* Стили модальных окон для JS */
 .popup-write-us--active {
   visibility: visible;
   animation-name: hideModal;
   animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+.popup-write-us--error {
+  animation-name: errorField;
+  animation-duration: 2s;
   animation-timing-function: linear;
 }
 .popup-map--active {
