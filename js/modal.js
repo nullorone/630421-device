@@ -63,6 +63,8 @@ function showModalMap(evt) {
   overlay.classList.add('popup-overlay--active');
   if (iframeStatus) {
     mapPic.style.display = 'none';
+  } else {
+    iframe.style.display = 'none';
   }
   window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {

@@ -355,6 +355,12 @@ input[type="radio"].visually-hidden {
 .goods-category__link:focus {
   background-color: #f0c52e;
 }
+/* Состояние при нажатии для IE11 */
+.goods-category__pic:active,
+.title-item a:active {
+  opacity: 0.3;
+}
+/* Состояние при нажатии для остальных браузеров */
 .goods-category__link:active > .goods-category__pic,
 .goods-category__link:active ~ .title-item {
   opacity: 0.3;
@@ -850,7 +856,7 @@ input[id="services-slider__slide3"]:checked
     left top, right top,
     from(#dcdcdc),
     color-stop(30%, #dcdcdc),
-    color-stop(31%, #ebebeb),
+    color-stop(30%, #ebebeb),
     to(#ebebeb)
   );
 
@@ -858,7 +864,7 @@ input[id="services-slider__slide3"]:checked
     left,
     #dcdcdc 0%,
     #dcdcdc 30%,
-    #ebebeb 31%,
+    #ebebeb 30%,
     #ebebeb 100%
   );
 
@@ -866,7 +872,7 @@ input[id="services-slider__slide3"]:checked
     left,
     #dcdcdc 0%,
     #dcdcdc 30%,
-    #ebebeb 31%,
+    #ebebeb 30%,
     #ebebeb 100%
   );
 
@@ -874,7 +880,7 @@ input[id="services-slider__slide3"]:checked
     to right,
     #dcdcdc 0%,
     #dcdcdc 30%,
-    #ebebeb 31%,
+    #ebebeb 30%,
     #ebebeb 100%
   );
 }
@@ -887,7 +893,7 @@ input[id="services-slider__slide3"]:checked
   width: 200px;
   min-height: 44px;
   padding-top: 23px;
-  padding-right: 68px;
+  padding-right: 80px;
   padding-left: 60px;
   padding-bottom: 3px;
   background-color: #dcdcdc;
@@ -907,7 +913,7 @@ input[id="services-slider__slide3"]:checked
 .parameters__title {
   min-width: 160px;
   margin: 0;
-  margin-left: 73px;
+  margin-left: 60px;
   padding: 0;
 
   font-weight: 800;
@@ -978,7 +984,7 @@ input[id="services-slider__slide3"]:checked
   line-height: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
-  text-transform: initial;
+  text-transform: inherit;
   letter-spacing: 0.13px;
 
   opacity: 0.5;
@@ -1396,7 +1402,7 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
 }
 .about .description:nth-child(3) {
   margin-top: 31px;
-  width: 480px;
+  width: 465px;
   letter-spacing: -0.14px;
 }
 .partners {
@@ -1557,7 +1563,7 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
     left top, right top,
     from(#eeeeee),
     color-stop(30%, #eeeeee),
-    color-stop(31%, #ffffff),
+    color-stop(30%, #ffffff),
     to(#ffffff)
   );
 
@@ -1565,7 +1571,7 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
     left,
     #eeeeee 0%,
     #eeeeee 30%,
-    #ffffff 31%,
+    #ffffff 30%,
     #ffffff 100%
   );
 
@@ -1573,7 +1579,7 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
     left,
     #eeeeee 0%,
     #eeeeee 30%,
-    #ffffff 31%,
+    #ffffff 30%,
     #ffffff 100%
   );
 
@@ -1581,7 +1587,7 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
     to right,
     #eeeeee 0%,
     #eeeeee 30%,
-    #ffffff 31%,
+    #ffffff 30%,
     #ffffff 100%
   );
 }
@@ -1662,6 +1668,8 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   width: 760px;
   min-height: 70px;
   margin-bottom: 77px;
@@ -1833,7 +1841,7 @@ input[id="promo-slider__slide3"]:checked ~ .promo-slide3 {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.goods__item:nth-child(4)::before {
+.goods__item--label-new::before {
   content: "";
   position: absolute;
   top: 28px;
@@ -2178,6 +2186,23 @@ textarea {
   width: 960px;
   height: 559px;
 }
+.goods__block .title-item--width {
+  width: 225px;
+}
+.title--promo1 {
+width: 400px;
+}
+.title--promo2 {
+  width: 260px;
+}
+.title-item--width {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 35px;
+}
+.title-item--width-ie11 {
+  width: 161px;
+}
 /* Анимация для модальных окон */
 @-webkit-keyframes hideModal {
   0% {
@@ -2240,7 +2265,10 @@ textarea {
   90% {
     -webkit-transform: rotate(-1deg);
             transform: rotate(-1deg);
-    outline: 2px solid red;
+    /* outline: 2px solid #ff0000; */
+    outline-color: #ff0000;
+    outline-style: solid;
+    outline-width: 2px;
   }
   20%,
   40%,
@@ -2263,7 +2291,10 @@ textarea {
   90% {
     -webkit-transform: rotate(-1deg);
             transform: rotate(-1deg);
-    outline: 2px solid red;
+    /* outline: 2px solid #ff0000; */
+    outline-color: #ff0000;
+    outline-style: solid;
+    outline-width: 2px;
   }
   20%,
   40%,
